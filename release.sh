@@ -7,7 +7,7 @@ IMAGE=sample-nodejs-app
 # ensure we're up to date
 git pull
 # bump version
-docker run --rm -v "$PWD":/app royeesh/bump patch
+docker run --rm -v "$PWD":/app treeder/bump patch
 version=`cat VERSION`
 echo "version: $version"
 # run build
